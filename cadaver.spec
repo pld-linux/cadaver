@@ -8,7 +8,7 @@ Group:		Applications/Networking
 Source0:	http://www.webdav.org/cadaver/%{name}-%{version}.tar.gz
 # Source0-md5:	4840e36aad819731ad5071385a9f9f9e
 URL:		http://www.webdav.org/cadaver/
-BuildRequires:	openssl-devel >= 0.9.7
+BuildRequires:	openssl-devel >= 0.9.7c
 BuildRequires:	libxml2-devel
 BuildRequires:	neon-devel >= 0.21.3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
