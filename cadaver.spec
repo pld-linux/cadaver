@@ -7,7 +7,7 @@ License:	GPL
 Group:		Applications/Networking
 Source0:	http://www.webdav.org/cadaver/%{name}-%{version}.tar.gz
 URL:		http://www.webdav.org/cadaver/
-BuildRequires:	openssl-devel
+BuildRequires:	openssl-devel >= 0.9.7
 BuildRequires:	libxml2-devel
 BuildRequires:	neon-devel >= 0.21.3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
