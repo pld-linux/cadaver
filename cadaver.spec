@@ -1,16 +1,16 @@
 Summary:	A command-line WebDAV client
-Summary(pl):	Klient WebDav (z linii poleceñ)
+Summary(pl):	Klient WebDav (dzia³aj±cy z linii poleceñ)
 Name:		cadaver
-Version:	0.22.0
+Version:	0.22.2
 Release:	1
 License:	GPL
 Group:		Applications/Networking
 Source0:	http://www.webdav.org/cadaver/%{name}-%{version}.tar.gz
-# Source0-md5:	a46235f79b54f12c241d271edbc8be06
+# Source0-md5:	167cca2089bdb86c42b6d5f0187cdc16
 URL:		http://www.webdav.org/cadaver/
-BuildRequires:	openssl-devel >= 0.9.7d
-BuildRequires:	libxml2-devel
-BuildRequires:	neon-devel >= 0.24.0
+BuildRequires:	neon-devel >= 0.24.6
+BuildRequires:	readline-devel
+Requires:	neon >= 0.24.6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -19,25 +19,23 @@ upload, download, on-screen display, namespace operations (move/copy),
 collection creation and deletion, and locking operations.
 
 %description -l pl
-cadaver to klient WebDAV z linii poleceñ. Wspiera on wgrywanie plików,
-pobieranie, wy¶wietlanie zawarto¶ci na ekranie, operacje dotycz±ce
-przestrzeni nazw (przenoszenie/kopiowanie), tworzenie i usuwanie
-kolekcji oraz operacje blokowania.
+cadaver to klient WebDAV dzia³aj±cy z linii poleceñ. Obs³uguje on
+wgrywanie plików, pobieranie, wy¶wietlanie zawarto¶ci na ekranie,
+operacje dotycz±ce przestrzeni nazw (przenoszenie/kopiowanie),
+tworzenie i usuwanie kolekcji oraz operacje blokowania.
 
 %prep
 %setup -q
 
 %build
 %configure \
-	--with-ssl \
-	--with-force-ssl \
-	--with-libxml2
+	--with-neon=/usr
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{makeinstall}
+%makeinstall
 
 %clean
 rm -rf $RPM_BUILD_ROOT
