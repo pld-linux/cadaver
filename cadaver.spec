@@ -2,7 +2,7 @@ Summary:	A command-line WebDAV client
 Summary(pl):	Klient WebDav (dzia³aj±cy z linii poleceñ)
 Name:		cadaver
 Version:	0.22.2
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Networking
 Source0:	http://www.webdav.org/cadaver/%{name}-%{version}.tar.gz
