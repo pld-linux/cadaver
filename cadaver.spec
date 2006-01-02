@@ -1,12 +1,12 @@
 Summary:	A command-line WebDAV client
 Summary(pl):	Klient WebDav (dzia³aj±cy z linii poleceñ)
 Name:		cadaver
-Version:	0.22.2
-Release:	4
+Version:	0.22.3
+Release:	1
 License:	GPL
 Group:		Applications/Networking
 Source0:	http://www.webdav.org/cadaver/%{name}-%{version}.tar.gz
-# Source0-md5:	167cca2089bdb86c42b6d5f0187cdc16
+# Source0-md5:	0c5268286e732a8d5d94361cf93de412
 URL:		http://www.webdav.org/cadaver/
 BuildRequires:	neon-devel >= 0.24.6
 BuildRequires:	readline-devel
@@ -37,10 +37,12 @@ rm -rf $RPM_BUILD_ROOT
 
 %makeinstall
 
+%find_lang %{name}
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files
+%files -f %{name}.lang
 %defattr(644,root,root,755)
 %doc BUGS ChangeLog FAQ INTEROP NEWS README THANKS TODO
 %attr(755,root,root) %{_bindir}/*
