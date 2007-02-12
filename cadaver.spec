@@ -1,5 +1,5 @@
 Summary:	A command-line WebDAV client
-Summary(pl.UTF-8):   Klient WebDav (działający z linii poleceń)
+Summary(pl.UTF-8):	Klient WebDav (działający z linii poleceń)
 Name:		cadaver
 Version:	0.22.3
 Release:	2
