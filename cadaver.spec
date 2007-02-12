@@ -1,5 +1,5 @@
 Summary:	A command-line WebDAV client
-Summary(pl):	Klient WebDav (dzia≥aj±cy z linii poleceÒ)
+Summary(pl.UTF-8):   Klient WebDav (dzia≈ÇajƒÖcy z linii polece≈Ñ)
 Name:		cadaver
 Version:	0.22.3
 Release:	2
@@ -19,10 +19,10 @@ cadaver is a command-line WebDAV client for Unix. It supports file
 upload, download, on-screen display, namespace operations (move/copy),
 collection creation and deletion, and locking operations.
 
-%description -l pl
-cadaver to klient WebDAV dzia≥aj±cy z linii poleceÒ. Obs≥uguje on
-wgrywanie plikÛw, pobieranie, wy∂wietlanie zawarto∂ci na ekranie,
-operacje dotycz±ce przestrzeni nazw (przenoszenie/kopiowanie),
+%description -l pl.UTF-8
+cadaver to klient WebDAV dzia≈ÇajƒÖcy z linii polece≈Ñ. Obs≈Çuguje on
+wgrywanie plik√≥w, pobieranie, wy≈õwietlanie zawarto≈õci na ekranie,
+operacje dotyczƒÖce przestrzeni nazw (przenoszenie/kopiowanie),
 tworzenie i usuwanie kolekcji oraz operacje blokowania.
 
 %prep
