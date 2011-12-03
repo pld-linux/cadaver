@@ -10,6 +10,7 @@ Source0:	http://www.webdav.org/cadaver/%{name}-%{version}.tar.gz
 URL:		http://www.webdav.org/cadaver/
 BuildRequires:	automake
 BuildRequires:	neon-devel >= 0.28.0
+BuildRequires:	pakchois-devel >= 0.4
 BuildRequires:	readline-devel
 Requires:	neon >= 0.27.1
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -29,7 +30,11 @@ tworzenie i usuwanie kolekcji oraz operacje blokowania.
 %setup -q
 
 %build
-install %{_datadir}/automake/config.* .
+%{__gettextize}
+%{__libtoolize}
+%{__aclocal} -I m4 -I m4/neon
+%{__autoconf}
+%{__autoheader}
 %configure \
 	--with-neon=/usr
 %{__make}
