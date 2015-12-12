@@ -1,0 +1,11 @@
+--- cadaver-0.23.3/configure.ac~	2015-12-12 13:11:43.281099457 +0100
++++ cadaver-0.23.3/configure.ac	2015-12-12 13:18:33.468457957 +0100
+@@ -27,6 +27,8 @@ if test "$enable_debug" = "yes"; then
+    AC_DEFINE(NE_DEBUGGING, 1, [Define to enable debugging])
+ fi
+ 
++AM_PROG_MKDIR_P
++
+ CHECK_READLINE()
+ 
+ AC_ARG_ENABLE(netrc,
